@@ -12,7 +12,8 @@ WEBSERVER_ADDRESS = '0.0.0.0'
 WEBSERVER_PORT = 5000
 
 # Optional list of Mattermost tokens (list of strings e.g. ['abc123', 'xyz321'])
-MATTERMOST_TOKENS = filter(lambda x: x, os.environ.get('MATTERMOST_TOKENS', '').split(','))
+#MATTERMOST_TOKENS = filter(lambda x: x, os.environ.get('MATTERMOST_TOKENS', '').split(','))
+MATTERMOST_TOKENS = None
 
 # URL of the Mattermost server
 MATTERMOST_URL = os.environ.get('MATTERMOST_URL', 'http://localhost')
